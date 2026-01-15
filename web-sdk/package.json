@@ -1,54 +1,36 @@
 {
-	"name": "ways",
-	"version": "0.0.0",
-	"private": true,
+  "name": "twist-turbo",
+  "version": "0.0.0",
+  "private": true,
 	"license": "MIT",
-	"scripts": {
-		"format": "prettier --write --ignore-path=../../.prettierignore .",
-		"lint": "eslint \"src\"",
-		"storybook": "PUBLIC_CHROMATIC=true storybook dev -p 6001 public",
-		"dev": "vite dev --host --port 3001",
-		"build": "vite build",
-		"preview": "vite preview"
-	},
-	"type": "module",
-	"devDependencies": {
-		"eslint": "9.21.0",
-		"eslint-config-custom": "workspace:*",
-		"config-ts": "workspace:*",
-		"config-vite": "workspace:*",
-		"config-svelte": "workspace:*",
-		"config-lingui": "workspace:*",
-		"config-storybook": "workspace:*",
-		"chromatic": "11.26.1",
-		"@storybook/addon-svelte-csf": "5.0.5",
-		"@sveltejs/vite-plugin-svelte": "5.0.3"
-	},
-	"dependencies": {
-		"lodash": "4.17.16",
-		"@types/lodash": "4.17.16",
-		"svelte": "5.20.5",
-		"vite": "6.2.0",
-		"@sveltejs/kit": "2.17.3",
-		"@lingui/core": "5.2.0",
-		"envs": "workspace:*",
-		"rgs-requests": "workspace:*",
-		"pixi-svelte": "workspace:*",
-		"state-shared": "workspace:*",
-		"constants-shared": "workspace:*",
-		"components-storybook": "workspace:*",
-		"components-shared": "workspace:*",
-		"components-layout": "workspace:*",
-		"components-ui-html": "workspace:*",
-		"components-pixi": "workspace:*",
-		"components-ui-pixi": "workspace:*",
-		"utils-event-emitter": "workspace:*",
-		"utils-shared": "workspace:*",
-		"utils-xstate": "workspace:*",
-		"utils-slots": "workspace:*",
-		"utils-book": "workspace:*",
-		"utils-bet": "workspace:*",
-		"utils-layout": "workspace:*",
-		"utils-sound": "workspace:*"
-	}
+  "scripts": {
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "preview": "turbo run preview",
+    "real-build-storybook": "turbo run real-build-storybook",
+    "storybook": "turbo run storybook",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish",
+    "e2e": "turbo run e2e",
+    "e2e-smoke": "turbo run e2e-smoke",
+    "e2e-mobile": "turbo run e2e-mobile"
+  },
+  "dependencies": {
+    "eslint": "9.21.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "3.5.2",
+    "prettier-plugin-svelte": "3.3.3",
+    "turbo": "2.4.4"
+  },
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "packageManager": "pnpm@10.5.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "svelte-preprocess"
+    ]
+  }
 }

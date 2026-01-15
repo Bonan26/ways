@@ -1,18 +1,19 @@
 # Assets - Alpha Wolves
 
-## Style Artistique: "Grungy Cartoon"
-- Inspiration: Ren & Stimpy, Courage le Chien Froussard
-- Trait noir organique
-- Aplats de couleurs vibrantes
-- Expressions grotesques
+## Style Artistique: "Clean Cartoon Wolf"
+- Inspiration: NFT Art moderne, Animation stylisée, Streetwear
+- Trait noir propre et bold
+- Aplats de couleurs vibrantes avec cel-shading léger
+- Expressions cool, confiantes, badass - PAS grotesques
 
 ## Palette
 ```
-Rose chair:    #E8A0B0
-Fond désaturé: #2D2A3A
-Noir trait:    #1A1A1A
-Accent néon:   #00FF88
-Rouge sang:    #CC2233
+Rose/Mauve loup:  #D4A0B8
+Fond sombre:      #2D2A3A
+Noir trait:       #1A1A1A
+Accent néon:      #00FF88
+Or/Bling:         #FFD700
+Violet mystique:  #8B5CF6
 ```
 
 ## Structure

@@ -9,30 +9,31 @@ Ce document définit les interfaces entre Math-SDK, Web-SDK et Assets.
 
 ## 1. DIRECTION ARTISTIQUE
 
-### Style: "Grungy Cartoon"
+### Style: "Clean Cartoon Wolf"
 
 **Références visuelles:**
-- Ren & Stimpy
-- Courage le Chien Froussard
-- Cartoons underground 90s/2000s
-- Esthétique Streetwear/NFT moderne
+- NFT Art moderne (Bored Apes, Cool Cats)
+- Animation moderne stylisée
+- Streetwear/Urban art
+- Cartoon avec attitude
 
 **Caractéristiques du trait:**
 | Élément | Description |
 |---------|-------------|
-| Line Art | Trait noir, net mais organique, variations d'épaisseur |
-| Colorimétrie | Aplats de couleurs vibrantes sur fonds neutres/désaturés |
-| Ombres | Quasi inexistantes - look 2D traditionnel |
-| Expressions | Grotesques et décalées (yeux injectés de sang, grimaces) |
-| Contraste | Mélange "mignon" (couleurs) vs "agressif" (expressions) |
+| Line Art | Trait noir, propre et bold, épaisseur consistante |
+| Colorimétrie | Aplats de couleurs vibrantes, cel-shading léger |
+| Ombres | Minimales - look 2D propre |
+| Expressions | Cool, confiantes, badass - PAS grotesques ou dégoûtantes |
+| Vibe | Stylé, moderne, edgy mais accessible |
 
-**Palette de couleurs suggérée:**
+**Palette de couleurs:**
 ```
-Rose chair loup:  #E8A0B0
-Fond désaturé:    #2D2A3A
+Rose/Mauve loup:  #D4A0B8
+Fond sombre:      #2D2A3A
 Noir trait:       #1A1A1A
 Accent néon:      #00FF88 (pour les wins)
-Rouge sang:       #CC2233 (yeux, effets)
+Or/Bling:         #FFD700 (accessoires)
+Violet mystique:  #8B5CF6 (effets spéciaux)
 ```
 
 ---
@@ -43,28 +44,28 @@ Rouge sang:       #CC2233 (yeux, effets)
 
 | ID | Nom Affichage | Description Visuelle | Paytable 6x/5x/4x/3x |
 |----|---------------|---------------------|----------------------|
-| `BOSS_WOLF` | Boss Wolf | Loup en costume 3 pièces, cigare, lunettes noires, expression menaçante, yeux injectés de sang | 100 / 50 / 20 / 5 |
-| `HUSTLER` | Hustler | Loup streetwear, casquette à l'envers, chaîne en or, sourire rusé/malsain | 50 / 25 / 10 / 3 |
-| `TECH_BRO` | Tech Bro | Loup avec lunettes cassées, t-shirt taché, expression maniaque/obsédée | 30 / 15 / 6 / 2 |
-| `DIAMOND_HANDS` | Diamond Hands | Loup aux pattes couvertes de bagues, expression déterminée/folle | 20 / 10 / 4 / 1.5 |
+| `BOSS_WOLF` | Boss Wolf | Loup confiant en costume sharp, lunettes cool, smirk de mob boss, fourrure rose/mauve | 100 / 50 / 20 / 5 |
+| `HUSTLER` | Hustler | Loup streetwear cool, casquette snapback, chaîne or, sourire confiant, style hip-hop | 50 / 25 / 10 / 3 |
+| `TECH_BRO` | Tech Bro | Loup smart avec lunettes stylées, hoodie, smirk confiant, vibes Silicon Valley | 30 / 15 / 6 / 2 |
+| `DIAMOND_HANDS` | Diamond Hands | Loup flashy avec bagues diamant, pose confiante, bling aesthetic | 20 / 10 / 4 / 1.5 |
 
-### 2.2 Symboles Low (4) - Items de Meute
+### 2.2 Symboles Low (4) - Items Stylisés
 
 | ID | Nom Affichage | Description Visuelle | Paytable 6x/5x/4x/3x |
 |----|---------------|---------------------|----------------------|
-| `BONE` | Os | Os rongé, traces de morsures, style cartoon dégoûtant | 12 / 6 / 2 / 0.8 |
-| `MEAT` | Viande | Morceau de viande crue dégoulinante, style exagéré | 10 / 5 / 1.5 / 0.6 |
-| `CLAW` | Griffe | Griffe acérée avec traces de sang, look menaçant | 8 / 4 / 1.2 / 0.4 |
-| `FANG` | Croc | Croc de loup isolé, jauni, style grotesque | 6 / 3 / 1 / 0.3 |
+| `BONE` | Os | Os cartoon stylisé, blanc propre, design bold simple | 12 / 6 / 2 / 0.8 |
+| `MEAT` | Steak | Steak T-bone stylisé, viande rouge avec gras, design appétissant | 10 / 5 / 1.5 / 0.6 |
+| `CLAW` | Griffe | Griffe de loup stylisée, gris métallique, design bold puissant | 8 / 4 / 1.2 / 0.4 |
+| `FANG` | Croc | Croc de loup stylisé, blanc propre, design iconique | 6 / 3 / 1 / 0.3 |
 
 ### 2.3 Symboles Spéciaux (4)
 
 | ID | Nom Affichage | Type | Description Visuelle |
 |----|---------------|------|---------------------|
-| `ALPHA_WOLF` | Alpha Wolf | Wild + Split | Loup alpha massif, yeux brillants rouges, aura de pouvoir, expression dominante |
-| `HOWLING_WILD` | Howling Wild | Wild + Multiplier (x2-x10) | Loup hurlant à la lune, ondes sonores visibles, affichage multiplicateur |
-| `MOON_SCATTER` | Moon | Scatter | Lune sanglante/rouge avec silhouette de loup hurlant |
-| `TERRITORY` | Territory | Expand | Drapeau déchiré avec empreinte de patte, style graffiti |
+| `ALPHA_WOLF` | Alpha Wolf | Wild + Split | Loup alpha puissant, yeux dorés brillants, pose majestueuse, aura de leader |
+| `HOWLING_WILD` | Howling Wild | Wild + Multiplier (x2-x10) | Loup hurlant avec effets néon, énergie mystique, multiplicateur affiché |
+| `MOON_SCATTER` | Moon | Scatter | Lune stylisée avec silhouette loup, tons violet/bleu mystique |
+| `TERRITORY` | Territory | Expand | Drapeau bold avec emblème patte de loup, style graffiti propre |
 
 ---
 
